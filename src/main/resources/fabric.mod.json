@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "armoredfootsteps",
+  "version": "${version}",
+  "name": "Armored Footsteps",
+  "description": "Changes the footstep sound played when walking on blocks to the equip sound of the boots you're wearing.",
+  "authors": [
+    "UnbreakingGold"
+  ],
+  "contact": {
+    "repo": "https://github.com/MacaylaMarvelous81/ArmoredFootsteps"
+  },
+  "license": "MIT",
+  "icon": "assets/armoredfootsteps/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "ml.unbreakinggold.armoredfootsteps.ArmoredFootsteps"
+    ],
+    "client": [
+      "ml.unbreakinggold.armoredfootsteps.client.ArmoredFootstepsClient"
+    ]
+  },
+  "mixins": [
+    "armoredfootsteps.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
