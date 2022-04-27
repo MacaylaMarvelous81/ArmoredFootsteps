@@ -42,5 +42,6 @@ public class EntityMixin {
         if (!state.getMaterial().isLiquid()) {
             ((Entity)(Object)this).playSound(armorItem.getEquipSound(), 1.0F, 1.0F);
         }
+        info.cancel();
     }
 }
